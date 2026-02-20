@@ -1,4 +1,4 @@
-# FRENCH AND ENGLISH VERSION AVAILABLE
+
 ## 🚖 Overview
 This project implements an end‑to‑end data engineering pipeline for the NYC Yellow Taxi dataset, following a modern medallion‑style architecture: Landing → Bronze → Silver → Gold.
 The pipeline automates ingestion, cleaning, transformation, and enrichment of taxi trip data and lookup tables using notebooks and orchestrated workflows.
