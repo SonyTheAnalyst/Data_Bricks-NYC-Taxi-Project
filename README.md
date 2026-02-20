@@ -7,25 +7,26 @@ The goal is to build a clean, reliable, analytics‑ready dataset for downstream
 ## 🏗️ Architecture
 The workflow follows a multi‑layered data architecture:
 
-1. Landing Layer
+### **1. Landing Layer**
 Raw ingestion of source files.
 - ingest_yellow_trip_landing
 Loads raw Yellow Taxi trip data into the landing zone.
 - 00_ingest_lookup_landing
 Loads lookup tables (e.g., taxi zones).
 
-2. Bronze Layer
+### **2. Bronze Layer**
 Stores raw but structured data.
 - Bronze_yellow_trips_raw
 Converts landing data into a structured raw format.
 
-3. Silver Layer
+### **3. Silver Layer**
 Cleansed and standardized datasets.
 - Sliver_taxi_zone_lookup
 Cleans and standardizes the taxi zone lookup table.
 - Sliver_yellow_trips_cleansed
 Cleans trip data (schema alignment, null handling, type casting, etc.).
-4. Gold Layer
+
+### **4. Gold Layer**
 Business‑ready, enriched datasets.
 - Gold_yellow_trips_enriched
 Combines cleansed trips with lookup tables to produce analytics‑ready data.
